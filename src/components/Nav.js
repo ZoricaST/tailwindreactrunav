@@ -7,7 +7,7 @@ const Nav = ({tabovi}) => {
     let [open,setOpen]=useState(false);
     return (
     <div className='shadow-md w-full fixed top-0 left-0'>
-        <div className='md:flex items-center justify-between bg-white py-2 md:px-10 px-7'>
+        <div className='md:flex items-center justify-between bg-lime-100 py-2 md:px-10 px-7'>
              
         <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-red-900'>
@@ -30,7 +30,7 @@ const Nav = ({tabovi}) => {
   {tabovi.map((tab) => (<li className='md:ml-8 text-xl md:my-0 my-7'>
       <Link to={`/${tab.put}`} className='text-gray-600 hover:text-gray-400 duration-500' key={tab.id}>{tab.ime}</Link></li>))} 
       <Button>
-          Get Started
+          O meni
         </Button>
         </ul>
       </div>
