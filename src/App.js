@@ -5,15 +5,11 @@ import Page3 from './pages/Page3';
 import Page4 from './pages/Page4';
 import Page5 from './pages/Page5';
 import Page6 from './pages/Page6';
-import Nav1 from './components/Nav1';
+import Nav from './components/Nav';
 
 function App() {
   let tabovi =[
-    {
-      id:0,
-      put:'/',
-      ime:'Pocetna',
-      },
+   
     {
     id:1,
     put:'page1',
@@ -60,7 +56,7 @@ function App() {
       <div className="bg-red-200 w-full h-screen">
 
        <div>
-       <Nav1 tabovi={tabovi}/>
+       <Nav tabovi={tabovi}/>
        </div>
 
        <div className=' p-20 '> 

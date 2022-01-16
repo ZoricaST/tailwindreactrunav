@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav1 = ({tabovi}) => {
     let [open, setOpen]=useState(false)
@@ -29,7 +30,7 @@ const Nav1 = ({tabovi}) => {
                  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in 
                  ${open ? 'top-20 opacity-100':'top-[-490px]'} md:opacity-100 opacity-0`}>{tabovi.map((tab)=>(
                         <li key={tab.ime} className='md:ml-8 text-xl md:my-0 my-7'>
-                            <a href={tab.put} className='text-gray-800 hover:text-gray-400 duration-500'>{tab.ime}</a>
+                            <Link href={tab.put} className='text-gray-800 hover:text-gray-400 duration-500'>{tab.ime}</Link>
                         </li>
                     ))}
                     <Button className='bg-red-600 text-white font-[Poppins] py-2 px-6 rounded 

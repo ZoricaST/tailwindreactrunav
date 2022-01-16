@@ -1,12 +1,8 @@
-import Nav1 from '../components/Nav1';
+import Nav from '../components/Nav';
 
 const Page1 = () => {
  let tabovi=[
-    {
-        id:0,
-        put:'/',
-        ime:'Pocetna',
-        },   
+  
     {
         id:2,
         put:'page2',
@@ -21,7 +17,7 @@ const Page1 = () => {
         
     return (
         <div className=' p-20 '> 
-             <Nav1 tabovi={tabovi}/>
+             <Nav tabovi={tabovi}/>
             <h1>Ovo je Page1</h1>
             <p>Ovde navigacija ima tabovepage2 i page3</p>
            
